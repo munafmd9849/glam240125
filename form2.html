@@ -1,0 +1,23 @@
+<!-- HTML -->
+ <head>
+  <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+ </head>
+<div id="userForm" style="display: none;">
+    <form>
+      <h2>User Form</h2>
+      <input type="text" placeholder="Enter your name" />
+      <button type="button" onclick="closeForm()"><span class="bi bi-x"></span></button>
+    </form>
+  </div>
+  <button onclick="openForm()"><span class="bi bi-person"></span></button>
+  
+  <!-- JavaScript -->
+  <script>
+    function openForm() {
+      document.getElementById('userForm').style.display = 'block';
+    }
+  
+    function closeForm() {
+      document.getElementById('userForm').style.display = 'none';
+    }
+  </script>
